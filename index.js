@@ -1,10 +1,21 @@
-var electron = require('electron');
-var BrowserWindow = electron.BrowserWindow;
-var app = electron.app;
+const {BrowserWindow} = require('electron');
+const {app} = require('electron');
 
 
 app.on('ready', () => {
-  var appWindow;
-  appWindow = new BrowserWindow();
-  appWindow.loadURL('http://google.com');
+
+  // Create appWindow
+  let appWindow = new BrowserWindow({
+    width: 1366,
+    height: 768
+  });
+
+  // Close appWindow
+  appWindow.on('closed', () => {
+    appWindow = null;
+  });
+
+  // Load appWindow content
+  appWindow.loadURL(`file://${__dirname}/flight.html`);
+
 });
