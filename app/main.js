@@ -16,6 +16,6 @@ app.on('ready', () => {
   });
 
   // Load appWindow content
-  appWindow.loadURL(`file://${__dirname}/flight.html`);
+  appWindow.loadURL(`file://${__dirname}/index.html`);
 
 });
