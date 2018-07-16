@@ -1,21 +1,24 @@
 {
   "name": "flight-notes",
   "version": "0.1.0",
-  "main": "src/electron-starter.js",
   "private": true,
   "devDependencies": {
-    "electron": "^2.0.5"
+    "electron": "^2.0.5",
+    "foreman": "^3.0.1"
   },
   "dependencies": {
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
     "react-scripts": "1.1.4"
   },
+  "homepage": "./",
+  "main": "src/electron-starter.js",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "electron": "electron ."
+    "electron": "electron .",
+    "dev": "nf start -p 3000"
   }
 }
