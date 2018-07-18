@@ -19,15 +19,15 @@ class MissionInfo extends Component {
           <h1>Mission Info</h1>
         </Row>
         <Row className="show-grid">
-          <Col xs={2}>
+          <Col xs={6} sm={2}>
             <ControlLabel>Date</ControlLabel>
             <FormControl.Static>7/18/2018</FormControl.Static>
           </Col>
-          <Col xs={2}>
+          <Col xs={6} sm={2}>
             <ControlLabel>Flight #</ControlLabel>
             <FormControl.Static>Flight 1</FormControl.Static>
           </Col>
-          <Col xs={4}>
+          <Col xs={12} sm={4}>
             <ControlLabel>Location</ControlLabel>
             <FormControl componentClass="select" placeholder="select">
               <option value="select">select</option>
@@ -36,12 +36,33 @@ class MissionInfo extends Component {
           </Col>
         </Row>
         <Row className="show-grid">
-          <Col xs={4}>Pilot-in-Command</Col>
-          <Col xs={4}>Payload Operator</Col>
-          <Col xs={4}>Visual Observer</Col>
+          <Col xs={6} sm={4}>
+            <ControlLabel>Pilot-in-Command</ControlLabel>
+            <FormControl componentClass="select" placeholder="select">
+              <option value="select">select</option>
+              <option value="other">...</option>
+            </FormControl>
+          </Col>
+          <Col xs={6} sm={4}>
+            <ControlLabel>Payload Operator</ControlLabel>
+            <FormControl componentClass="select" placeholder="select">
+              <option value="select">select</option>
+              <option value="other">...</option>
+            </FormControl>
+          </Col>
+          <Col xs={6} sm={4}>
+            <ControlLabel>Visual Observer</ControlLabel>
+            <FormControl componentClass="select" placeholder="select">
+              <option value="select">select</option>
+              <option value="other">...</option>
+            </FormControl>
+          </Col>
         </Row>
         <Row className="show-grid">
-          <Col xs={12}>Mission Description</Col>
+          <Col xs={12}>
+            <ControlLabel>Mission Description</ControlLabel>
+            <FormControl componentClass="textarea" />
+          </Col>
         </Row>
       </div>
     );
