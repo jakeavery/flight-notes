@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-// Import bootstrap components
 import { Grid } from 'react-bootstrap';
+// import logo from './logo.svg'; - how to import graphics
+// Import bootstrap components
 // Import other components
 import MissionInfo from './components/MissionInfo';
 
@@ -15,6 +15,6 @@ class App extends Component {
       </Grid>
     );
   }
-};
+}
 
 export default App;
