@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
 
 // Import bootstrap components, ex:
-import { Row, Col } from 'react-bootstrap';
+import {
+  Row, Col, FormControl, ControlLabel,
+}
+  from 'react-bootstrap';
 // Import other componenst, ex:
 // import FlightSection from './components/FlightSection'
 
@@ -16,9 +19,21 @@ class MissionInfo extends Component {
           <h1>Mission Info</h1>
         </Row>
         <Row className="show-grid">
-          <Col xs={2}>10/08/1991</Col>
-          <Col xs={2}>Flight 1</Col>
-          <Col xs={4}>Location</Col>
+          <Col xs={2}>
+            <ControlLabel>Date</ControlLabel>
+            <FormControl.Static>7/18/2018</FormControl.Static>
+          </Col>
+          <Col xs={2}>
+            <ControlLabel>Flight #</ControlLabel>
+            <FormControl.Static>Flight 1</FormControl.Static>
+          </Col>
+          <Col xs={4}>
+            <ControlLabel>Location</ControlLabel>
+            <FormControl componentClass="select" placeholder="select">
+              <option value="select">select</option>
+              <option value="other">...</option>
+            </FormControl>
+          </Col>
         </Row>
         <Row className="show-grid">
           <Col xs={4}>Pilot-in-Command</Col>
