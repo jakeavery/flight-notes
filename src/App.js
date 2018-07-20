@@ -4,6 +4,7 @@ import { Grid } from 'react-bootstrap';
 // Import bootstrap components
 // Import other components
 import MissionInfo from './components/MissionInfo';
+import AircraftInfo from './components/AircraftInfo';
 
 import './App.css';
 
@@ -12,6 +13,7 @@ class App extends Component {
     return (
       <Grid>
         <MissionInfo />
+        <AircraftInfo />
       </Grid>
     );
   }
