@@ -5,6 +5,7 @@ import { Grid } from 'react-bootstrap';
 // Import other components
 import MissionInfo from './components/MissionInfo';
 import AircraftInfo from './components/AircraftInfo';
+import PreflightChecklist from './components/PreflightChecklist';
 
 import './App.css';
 
@@ -14,6 +15,7 @@ class App extends Component {
       <Grid>
         <MissionInfo />
         <AircraftInfo />
+        <PreflightChecklist />
       </Grid>
     );
   }
