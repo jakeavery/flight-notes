@@ -6,6 +6,8 @@ import { Grid } from 'react-bootstrap';
 import MissionInfo from './components/MissionInfo';
 import AircraftInfo from './components/AircraftInfo';
 import PreflightChecklist from './components/PreflightChecklist';
+import Flight from './components/Flight';
+import LandingChecklist from './components/LandingChecklist';
 
 import './App.css';
 
@@ -16,6 +18,8 @@ class App extends Component {
         <MissionInfo />
         <AircraftInfo />
         <PreflightChecklist />
+        <Flight />
+        <LandingChecklist />
       </Grid>
     );
   }
