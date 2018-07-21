@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 // Import bootstrap components, ex:
 import {
-  Row, Col, FormControl, ControlLabel, FieldGroup,
+  Row, Col, FormControl, ControlLabel, FormGroup, Checkbox,
 }
   from 'react-bootstrap';
 // Import other componenst, ex:
@@ -40,41 +40,31 @@ class AircraftInfo extends Component {
               <option value="other">...</option>
             </FormControl>
           </Col>
-          {/* <Col xs={6} sm={3}>
-            <FieldGroup
-              type="text"
-              label="Voltage"
-              placeholder="Enter text"
-            />
-          </Col> */}
-        </Row>
-        <Row className="show-grid">
-          <Col xs={6} sm={4}>
-            <ControlLabel>Pilot-in-Command</ControlLabel>
-            <FormControl componentClass="select" placeholder="select">
-              <option value="select">select</option>
-              <option value="other">...</option>
-            </FormControl>
-          </Col>
-          <Col xs={6} sm={4}>
-            <ControlLabel>Payload Operator</ControlLabel>
-            <FormControl componentClass="select" placeholder="select">
-              <option value="select">select</option>
-              <option value="other">...</option>
-            </FormControl>
-          </Col>
-          <Col xs={6} sm={4}>
-            <ControlLabel>Visual Observer</ControlLabel>
-            <FormControl componentClass="select" placeholder="select">
-              <option value="select">select</option>
-              <option value="other">...</option>
-            </FormControl>
+          <Col xs={6} sm={3}>
+            <FormGroup>
+              <ControlLabel>Voltage</ControlLabel>
+              <FormControl
+                type="text"
+                // value={this.state.value}
+                placeholder="Enter text"
+                onChange={this.handleChange}
+              />
+            </FormGroup>
           </Col>
         </Row>
-        <Row className="show-grid">
+        <Row>
+          <Col xs={12} sm={6}>
+            <FormGroup>
+              <ControlLabel>Configuration Changes</ControlLabel>
+              <Checkbox readOnly>
+                New wpt or vrs file?
+              </Checkbox>
+            </FormGroup>
+          </Col>
           <Col xs={12}>
-            <ControlLabel>Mission Description</ControlLabel>
-            <FormControl componentClass="textarea" />
+            <FormGroup>
+              <FormControl componentClass="textarea" placeholder="Other configuration changes" />
+            </FormGroup>
           </Col>
         </Row>
       </div>
