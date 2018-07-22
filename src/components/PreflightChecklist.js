@@ -9,6 +9,7 @@ import {
 // import FlightSection from './components/FlightSection'
 
 import '../App.css';
+import ChecklistItem from './sub-components/ChecklistItem';
 
 class PreflightChecklist extends Component {
   render() {
@@ -18,6 +19,7 @@ class PreflightChecklist extends Component {
         <Row className="show-grid">
           <h1>Preflight Checklist</h1>
         </Row>
+        <ChecklistItem />
       </div>
     );
   }
