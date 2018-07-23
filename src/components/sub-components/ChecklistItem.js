@@ -31,6 +31,11 @@ class ChecklistItem extends Component {
             </Button>
           </Col>
         </Row>
+        <Row className="show-grid">
+          <Col xs={12}>
+            <ol>{notes}</ol>
+          </Col>
+        </Row>
       </div>
     );
   }
