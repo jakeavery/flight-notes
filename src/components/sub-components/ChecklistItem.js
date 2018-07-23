@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 // Import bootstrap components, ex:
 import {
-  Row, Col, FormControl, Button, Glyphicon,
+  Row, Col, FormControl, Checkbox, Button, Glyphicon,
 }
   from 'react-bootstrap';
 // Import other componenst, ex:
@@ -23,13 +23,11 @@ class ChecklistItem extends Component {
             <FormControl.Static>Aircraft Power</FormControl.Static>
           </Col>
           <Col xs={2} sm={1}>
-            <Button>
-              <Glyphicon glyph="align-left" />
-            </Button>
+            <Checkbox readOnly />
           </Col>
           <Col xs={2} sm={1}>
             <Button>
-              <Glyphicon glyph="align-right" />
+              <Glyphicon glyph="comment" />
             </Button>
           </Col>
         </Row>
